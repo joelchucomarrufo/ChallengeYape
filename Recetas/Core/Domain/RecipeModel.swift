@@ -1,0 +1,37 @@
+//
+//  RecipeModel.swift
+//  Recetas
+//
+//  Created by Joel Martin Chuco Marrufo on 22/05/24.
+//
+
+import Foundation
+
+public struct RecipeModel: Identifiable {
+    
+    public var id = UUID()
+    var title: String
+    var ingredientes: [String]
+    var preparacion: [String]
+    var image: String
+    var latitude: String
+    var longitude: String
+    
+    public init() {
+        self.title = ""
+        self.ingredientes = []
+        self.preparacion = []
+        self.image = ""
+        self.latitude = ""
+        self.longitude = ""
+    }
+    
+    public init(title: String, ingredientes: [String], preparacion: [String], image: String, latitude: String, longitude: String) {
+        self.title = title
+        self.ingredientes = ingredientes
+        self.preparacion = preparacion
+        self.image = image
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
