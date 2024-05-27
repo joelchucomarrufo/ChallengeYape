@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct RecipeModel: Identifiable {
+public struct RecipeModel: Identifiable, Equatable {
     
     public var id = UUID()
     var title: String
